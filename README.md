@@ -76,6 +76,20 @@ Proyek ini dilengkapi dengan halaman dokumentasi API otomatis:
 - `Helpers/`: Utilitas untuk koneksi database dan konfigurasi.
 - `Layouts/`: Folder tempat menyimpan file laporan Crystal Report (`.rpt`) Anda.
 
+## Menambah Template di Production
+
+Anda dapat menambah atau mengganti file `.rpt` di server production **tanpa harus build ulang** aplikasi. Aplikasi akan memindai folder secara dinamis setiap kali ada request.
+
+### Panduan Menambah Template:
+
+1.  **Struktur Folder**: Simpan file `.rpt` Anda di dalam sub-folder yang sesuai di bawah folder `Layouts` (misal: `Layouts/SO/`).
+2.  **Izin Akses**: Pastikan user yang menjalankan IIS (AppPool) memiliki izin **Read** ke file baru tersebut.
+3.  **Pengaturan Visual Studio**: Agar file `.rpt` otomatis ikut saat dideploy di masa depan:
+    - Masukkan file ke dalam project.
+    - Klik kanan file > **Properties**.
+    - Set **Build Action** ke `Content`.
+    - Set **Copy to Output Directory** ke `Copy if newer`.
+
 ## Keamanan Data
 
 Proyek ini memisahkan rahasia (secrets) menggunakan file `appSettings` eksternal. **JANGAN PERNAH** memasukkan file `web.secrets.config` ke dalam version control.
