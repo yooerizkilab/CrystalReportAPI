@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CrystalReportAPI/CrystalReportAPI.csproj" Id="775207a5-d211-44bc-a811-8e746df84582">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>
