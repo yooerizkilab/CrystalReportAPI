@@ -300,17 +300,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Layouts\DELIVERY\" />
-    <Folder Include="Layouts\DRAFT\" />
-    <Folder Include="Layouts\GOODISSUE\" />
-    <Folder Include="Layouts\GRPO\" />
-    <Folder Include="Layouts\INVOICE\" />
-    <Folder Include="Layouts\LOGISTIC\" />
-    <Folder Include="Layouts\PO\" />
-    <Folder Include="Layouts\PR\" />
-    <Folder Include="Layouts\SO\" />
-    <Folder Include="Layouts\SPK\" />
-    <Folder Include="Layouts\SQ\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\DELIVERY\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\DRAFT\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\GOODISSUE\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\GRPO\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\INVOICE\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\LOGISTIC\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\PO\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\PR\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\SO\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\SPK\" />
+    <Folder Include="Layouts\SIMULASI_UDMW\SQ\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -443,4 +443,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
 </Project>

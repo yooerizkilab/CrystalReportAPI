@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 using CrystalReportAPI.Helpers;
 
@@ -74,7 +75,6 @@ namespace CrystalReportAPI.Controllers
                 // ==================================================
                 // CONNECTION INFO (HANA DSN & SCHEMA)
                 // ==================================================
-                string schema = DbConnectionHelper.DEFAULT_SCHEMA;
                 ConnectionInfo connectionInfo = DbConnectionHelper.GetHanaConnection(schema);
 
                 // ==================================================
