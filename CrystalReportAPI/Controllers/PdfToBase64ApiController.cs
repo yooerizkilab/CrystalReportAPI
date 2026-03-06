@@ -5,6 +5,7 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using CrystalReportAPI.Helpers;
 
 namespace CrystalReportAPI.Controllers
 {
@@ -71,22 +72,17 @@ namespace CrystalReportAPI.Controllers
                 // ==================================================
                 // CONNECTION INFO (HANA DSN & SCHEMA)
                 // ==================================================
-                ConnectionInfo connectionInfo = new ConnectionInfo
-                {
-                    ServerName = "UDMW32", 
-                    DatabaseName = "SIMULASI_NEW_UD", 
-                    UserID = "B1ADMIN",
-                    Password = "Password#01"
-                };
+                string schema = DbConnectionHelper.DEFAULT_SCHEMA;
+                ConnectionInfo connectionInfo = DbConnectionHelper.GetHanaConnection(schema);
 
                 // ==================================================
                 // APPLY LOGIN & SCHEMA TO TABLES
                 // ==================================================
-                ApplyLogOnAndSchema(report, connectionInfo, "SIMULASI_NEW_UD");
+                ApplyLogOnAndSchema(report, connectionInfo, schema);
 
                 foreach (ReportDocument sub in report.Subreports)
                 {
-                    ApplyLogOnAndSchema(sub, connectionInfo, "SIMULASI_NEW_UD");
+                    ApplyLogOnAndSchema(sub, connectionInfo, schema);
                 }
 
                 // ==================================================

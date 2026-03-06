@@ -9,6 +9,7 @@ namespace CrystalReportAPI.Helpers
         private static string DSN_NAME => ConfigurationManager.AppSettings["DSN_NAME"];
         private static string DB_USER => ConfigurationManager.AppSettings["DB_USER"];
         private static string DB_PASSWORD => ConfigurationManager.AppSettings["DB_PASSWORD"];
+        public static string DEFAULT_SCHEMA => ConfigurationManager.AppSettings["DB_SCHEMA"];
 
         public static ConnectionInfo GetHanaConnection(string schema)
         {
