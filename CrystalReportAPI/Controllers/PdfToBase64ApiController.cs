@@ -18,7 +18,9 @@ namespace CrystalReportAPI.Controllers
 
             try
             {
-                string pathDoc = @"D:\Lab\C#\CrystalReportAPI\CrystalReportAPI\Layouts\Invoice.rpt";
+                string schema = DbConnectionHelper.DEFAULT_SCHEMA;
+                string rootPath = HttpContext.Current.Server.MapPath("~/Layouts");
+                string pathDoc = Path.Combine(rootPath, schema, "INVOICE", "Invoice.rpt");
 
                 if (!File.Exists(pathDoc))
                 {

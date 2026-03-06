@@ -17,16 +17,17 @@ namespace CrystalReportAPI.Controllers
         }
 
         [HttpGet]
-        [Route("{folderName}")]
-        public HttpResponseMessage ListTemplates(string folderName)
+        [Route("{schemadb}/{folderName}")]
+        public HttpResponseMessage ListTemplates(string schemadb, string folderName)
         {
             try
             {
-                var templates = _reportService.ListTemplates(folderName);
+                var templates = _reportService.ListTemplates(schemadb, folderName);
                 
                 return Request.CreateResponse(HttpStatusCode.OK, new
                 {
                     status = "Success",
+                    schema = schemadb,
                     category = folderName,
                     templates = templates,
                     count = templates.Length

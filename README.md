@@ -58,10 +58,10 @@ Mengambil string Base64 dari laporan yang digenerate.
 
 ### 2. Daftar Template
 
-Menampilkan semua file `.rpt` dalam sub-folder tertentu di dalam direktori `Layouts`.
+Menampilkan semua file `.rpt` dalam sub-folder tertentu berdasarkan schema di dalam direktori `Layouts`.
 
-- **URL**: `GET /api/template/{folderName}`
-- **Contoh**: `GET /api/template/SO` (Akan list file di `Layouts/SO`)
+- **URL**: `GET /api/template/{schemadb}/{folderName}`
+- **Contoh**: `GET /api/template/SBO_LIVE/SO` (Akan list file di `Layouts/SBO_LIVE/SO`)
 
 ### 3. Halaman Bantuan (Help Page)
 
@@ -75,6 +75,7 @@ Proyek ini dilengkapi dengan halaman dokumentasi API otomatis:
 - `Services/`: Logika bisnis untuk pemrosesan Crystal Reports.
 - `Helpers/`: Utilitas untuk koneksi database dan konfigurasi.
 - `Layouts/`: Folder tempat menyimpan file laporan Crystal Report (`.rpt`) Anda.
+  - Struktur: `Layouts/{NamaSchema}/{Kategori}/` (Contoh: `Layouts/SBO_LIVE/SO/`)
 
 ## Menambah Template di Production
 
@@ -82,7 +83,7 @@ Anda dapat menambah atau mengganti file `.rpt` di server production **tanpa haru
 
 ### Panduan Menambah Template:
 
-1.  **Struktur Folder**: Simpan file `.rpt` Anda di dalam sub-folder yang sesuai di bawah folder `Layouts` (misal: `Layouts/SO/`).
+1.  **Struktur Folder**: Simpan file `.rpt` Anda di dalam sub-folder yang sesuai berdasarkan schema (misal: `Layouts/SBO_LIVE/SO/`).
 2.  **Izin Akses**: Pastikan user yang menjalankan IIS (AppPool) memiliki izin **Read** ke file baru tersebut.
 3.  **Pengaturan Visual Studio**: Agar file `.rpt` otomatis ikut saat dideploy di masa depan:
     - Masukkan file ke dalam project.

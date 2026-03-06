@@ -16,9 +16,9 @@ namespace CrystalReportAPI.Services
             ReportDocument report = new ReportDocument();
             try
             {
-                // Constuct path: ~/Layouts/{folder}/{rptFile}.rpt
+                // Constuct path: ~/Layouts/{schema}/{folder}/{rptFile}.rpt
                 string rootPath = HttpContext.Current.Server.MapPath("~/Layouts");
-                string pathDoc = Path.Combine(rootPath, folder, rptFile + ".rpt");
+                string pathDoc = Path.Combine(rootPath, schema, folder, rptFile + ".rpt");
 
                 if (!File.Exists(pathDoc))
                 {
@@ -59,12 +59,12 @@ namespace CrystalReportAPI.Services
             }
         }
 
-        public string[] ListTemplates(string folder)
+        public string[] ListTemplates(string schema, string folder)
         {
             try
             {
                 string rootPath = HttpContext.Current.Server.MapPath("~/Layouts");
-                string categoryPath = Path.Combine(rootPath, folder);
+                string categoryPath = Path.Combine(rootPath, schema, folder);
 
                 if (!Directory.Exists(categoryPath))
                 {
