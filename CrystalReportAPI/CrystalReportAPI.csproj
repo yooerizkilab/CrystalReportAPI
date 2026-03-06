@@ -269,8 +269,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="Layouts\SO\SONEWJURTAP.rpt" />
-    <Content Include="Layouts\SO\OLDSO.rpt" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -310,6 +308,7 @@
     <Folder Include="Layouts\LOGISTIC\" />
     <Folder Include="Layouts\PO\" />
     <Folder Include="Layouts\PR\" />
+    <Folder Include="Layouts\SO\" />
     <Folder Include="Layouts\SPK\" />
     <Folder Include="Layouts\SQ\" />
     <Folder Include="Models\" />
