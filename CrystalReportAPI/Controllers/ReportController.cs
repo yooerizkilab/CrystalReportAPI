@@ -1,10 +1,10 @@
-using IDU_APP.Services;
+using CrystalReportAPI.Services;
 using System;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace IDU_APP.Controllers
+namespace CrystalReportAPI.Controllers
 {
     [RoutePrefix("api/report")]
     public class ReportController : ApiController

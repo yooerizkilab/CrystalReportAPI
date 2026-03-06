@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace IDU_APP.Services
+namespace CrystalReportAPI.Services
 {
     public interface IReportService
     {

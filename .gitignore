@@ -1,6 +1,19 @@
-bin/
-obj/
+# User-specific secrets
+CrystalReportAPI/web.secrets.config
+
+# Visual Studio
 .vs/
+[Bb]in/
+[Oo]bj/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
 packages/
+*.nupkg
+
+# Build results
+[Aa]pp_Data/
+node_modules/

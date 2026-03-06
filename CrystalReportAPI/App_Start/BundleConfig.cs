@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace IDU_APP
+namespace CrystalReportAPI
 {
     public class BundleConfig
     {

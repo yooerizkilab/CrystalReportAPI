@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace IDU_APP.Areas.HelpPage.ModelDescriptions
+namespace CrystalReportAPI.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

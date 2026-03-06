@@ -1,6 +1,6 @@
 using System;
 
-namespace IDU_APP.Areas.HelpPage.ModelDescriptions
+namespace CrystalReportAPI.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Use this attribute to change the name of the <see cref="ModelDescription"/> generated for a type.

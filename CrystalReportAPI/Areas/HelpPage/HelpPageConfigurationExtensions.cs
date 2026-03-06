@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using IDU_APP.Areas.HelpPage.ModelDescriptions;
-using IDU_APP.Areas.HelpPage.Models;
+using CrystalReportAPI.Areas.HelpPage.ModelDescriptions;
+using CrystalReportAPI.Areas.HelpPage.Models;
 
-namespace IDU_APP.Areas.HelpPage
+namespace CrystalReportAPI.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

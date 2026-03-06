@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace IDU_APP
+namespace CrystalReportAPI
 {
     public static class WebApiConfig
     {

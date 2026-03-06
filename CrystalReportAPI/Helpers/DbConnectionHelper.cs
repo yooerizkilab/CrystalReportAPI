@@ -1,13 +1,14 @@
 using CrystalDecisions.Shared;
 using System;
+using System.Configuration;
 
-namespace IDU_APP.Helpers
+namespace CrystalReportAPI.Helpers
 {
     public static class DbConnectionHelper
     {
-        public const string DSN_NAME = "UDMW32";
-        public const string DB_USER = "B1ADMIN";
-        public const string DB_PASSWORD = "Password#01";
+        private static string DSN_NAME => ConfigurationManager.AppSettings["DSN_NAME"];
+        private static string DB_USER => ConfigurationManager.AppSettings["DB_USER"];
+        private static string DB_PASSWORD => ConfigurationManager.AppSettings["DB_PASSWORD"];
 
         public static ConnectionInfo GetHanaConnection(string schema)
         {

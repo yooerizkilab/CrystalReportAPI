@@ -1,13 +1,13 @@
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
-using IDU_APP.Helpers;
+using CrystalReportAPI.Helpers;
 using System;
 using System.IO;
 using System.Linq;
 using System.Web;
 
 
-namespace IDU_APP.Services
+namespace CrystalReportAPI.Services
 {
     public class ReportService : IReportService
     {

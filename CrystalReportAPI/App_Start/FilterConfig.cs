@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace IDU_APP
+namespace CrystalReportAPI
 {
     public class FilterConfig
     {

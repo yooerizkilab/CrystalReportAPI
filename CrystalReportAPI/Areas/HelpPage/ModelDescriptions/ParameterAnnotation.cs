@@ -1,6 +1,6 @@
 using System;
 
-namespace IDU_APP.Areas.HelpPage.ModelDescriptions
+namespace CrystalReportAPI.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace IDU_APP.Areas.HelpPage.ModelDescriptions
+namespace CrystalReportAPI.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

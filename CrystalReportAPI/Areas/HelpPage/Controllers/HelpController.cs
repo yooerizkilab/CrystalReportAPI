@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using IDU_APP.Areas.HelpPage.ModelDescriptions;
-using IDU_APP.Areas.HelpPage.Models;
+using CrystalReportAPI.Areas.HelpPage.ModelDescriptions;
+using CrystalReportAPI.Areas.HelpPage.Models;
 
-namespace IDU_APP.Areas.HelpPage.Controllers
+namespace CrystalReportAPI.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

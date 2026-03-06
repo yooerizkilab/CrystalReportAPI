@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace IDU_APP.Areas.HelpPage
+namespace CrystalReportAPI.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

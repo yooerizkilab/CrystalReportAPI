@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace IDU_APP.Areas.HelpPage
+namespace CrystalReportAPI.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

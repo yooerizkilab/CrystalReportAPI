@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace IDU_APP.Controllers
+namespace CrystalReportAPI.Controllers
 {
     public class PdfToBase64ApiController : ApiController
     {
@@ -17,7 +17,7 @@ namespace IDU_APP.Controllers
 
             try
             {
-                string pathDoc = @"D:\Lab\C#\IDU_APP\IDU_APP\Layouts\Invoice.rpt";
+                string pathDoc = @"D:\Lab\C#\CrystalReportAPI\CrystalReportAPI\Layouts\Invoice.rpt";
 
                 if (!File.Exists(pathDoc))
                 {

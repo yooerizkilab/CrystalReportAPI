@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace IDU_APP
+namespace CrystalReportAPI
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
